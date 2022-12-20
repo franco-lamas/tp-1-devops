@@ -12,7 +12,7 @@ on:
     branches:
       - "main"
       
-  workflow_dispatch: true
+  workflow_dispatch:
 
 jobs:
   gitleaks:
