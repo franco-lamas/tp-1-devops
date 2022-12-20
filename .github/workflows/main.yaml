@@ -16,6 +16,7 @@ jobs:
   gitleaks:
     name: Gitleaks 
     runs-on: ubuntu-latest
+#    continue-on-error: true
     steps:
       - uses: actions/checkout@v3
         with:
@@ -23,3 +24,11 @@ jobs:
       - uses: gastonbarbaccia/gitleaks@v2.1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+
+  saludo:
+    name: saludo
+    runs-on: ubuntu-latest
+    needs: [gitleaks]
+    steps:
+      - name: saludo command
+        run: echo "HolaMundo"
