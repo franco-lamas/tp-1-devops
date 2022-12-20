@@ -22,15 +22,6 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
-<?php
-
-
-
-$token = "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";
-
-
-
-?>
 
 <body class="hold-transition login-page" style="background-image: url('img/wallpaper.jpg');background-size:cover;">
   <div class="login-box">
@@ -88,4 +79,9 @@ $token = "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";
 
 </body>
 
+<?php
+
+$token = "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";
+
+?>
 </html>
